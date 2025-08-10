@@ -5,7 +5,7 @@ example = pypacks.PyPack()
 
 # Define a function in the PyPack that says "Hello"
 hello = example.function("hello")
-hello.say("Hello")
+hello.add_command("say", "Hello")
 
 # Build the PyPack for Bedrock and Java
 example.build(pypacks.PyPackType.JAVA)
